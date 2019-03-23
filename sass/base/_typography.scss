@@ -4,6 +4,16 @@ body{
     line-height: 1.7;
     color: var(--color-text);
     font-size: 1.5rem;
+
+    @include response(tab-land){
+        font-size: 2rem;
+    }
+
+    @include response(tab-port){
+        font-size: 2.2rem;
+    }
+
+    
 }
 
 .heading-primary{
@@ -11,20 +21,63 @@ body{
     font-weight: 300;
     text-transform: uppercase;
     color: var(--color-white);
+    line-height: 1;
+    letter-spacing: .5rem;
+    margin: 0;
+    color: var(--color-grey-light-2);
+
+    &--home{
+        line-height: 1.3;
+        padding-left: 9rem;
+        border-left: 1px solid var(--color-grey-dark-3)
+    }
 }
+
+
 
 .heading-secondary{
     font-size: 4rem;
     font-weight: 300;
     text-transform: uppercase;
     color: var(--color-primary);
+    display: block;
+    width: 100%;
     line-height: 1.2;
+    margin: 0;
+    letter-spacing: 3px;
+
+    &--about{
+        &::before{
+            content: "";
+            display: block;
+            height: 1px;
+            width: 8rem;
+            background-color: var(--color-secondary);
+            margin-bottom: 5rem;
+        }
+    }
+
+    &--sub{
+        display: block;
+    }
 }
 
 .heading-tertiary{
     font-size: 2.2rem;
     font-weight: 500;
     text-transform: uppercase;
-    color: var(--color-primary);
+    color: var(--color-secondary);
+    line-height: 1.5;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.heading-programme{
+    font-size: 4rem;
+    color: var(--color-white);
+    text-transform: capitalize;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 4px;
 }
 

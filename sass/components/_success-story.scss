@@ -1,0 +1,72 @@
+.success-feature{
+
+
+    .row:not(:last-child){
+        margin-bottom: 6rem;
+    }
+
+   
+
+    &__box{
+        display: flex;
+        align-items: center;
+
+        &:hover .success-feature__content-box{
+            border: 2px solid transparent;
+            box-shadow: var(--shadow-2);
+            cursor: pointer;
+        }
+
+
+        @include response(tab-port){
+            flex-direction: column;
+        }
+    }
+
+    &__img-box{
+        flex: 0 0 30%;
+        z-index: 2;
+        @include response(tab-port){
+            width: 80%;
+            margin-bottom: 2rem;
+            order: 0;
+        }
+    }
+
+    &__img{
+        width: 100%;
+        display: block;
+    }
+
+    &__content-box{
+        flex: 1;
+        padding: 5rem 18rem 5rem 10rem;  
+        border: 2px solid var(--color-primary);
+        margin-left: -5.5rem;
+        z-index: 1;
+        transition: all .3s ease-in-out;
+
+        @include response(tab-port){
+            margin-left: 0;
+            order: 1
+            
+        }
+
+        @include response(phone){
+            padding: 5rem 8rem 5rem 8rem;  
+
+            
+        }
+
+        &--right{
+            margin-right: -5.5rem;
+            margin-left: 0;
+
+            @include response(tab-port){
+                margin-right: 0;
+                
+            }
+        }
+
+    }
+}

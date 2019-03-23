@@ -1,0 +1,86 @@
+// Margin Utilities
+.u-mb-xxs{margin-bottom: .8rem !important;}
+.u-mb-xs{margin-bottom: 1.5rem !important;}
+.u-mb-s{margin-bottom: 2rem !important;}
+.u-mb-m{margin-bottom: 3.5rem !important;}
+.u-mb-ml{margin-bottom: 5rem !important;}
+.u-mb-l{margin-bottom: 8rem !important;}
+.u-mb-xl{margin-bottom: 10.5rem !important;}
+.u-mb-xxl{margin-bottom: 15rem !important;}
+
+.u-mt-xl{margin-top: 10.5rem !important;}
+
+
+.u-mt-n{
+    margin-top: -9rem !important;
+}
+
+
+
+// color Utilities
+.u-color-w{color: var(--color-white) !important;}
+
+.u-color-primary{color: var(--color-primary) !important;}
+
+.u-color-secondary{color: var(--color-secondary) !important;}
+
+
+.u-text-unset{text-transform: unset !important;}
+
+.u-color-grey-light-2{color: var(--color-grey-light-2) !important;}
+
+.u-line-h-d{line-height: 1.5 !important;}
+
+.u-bg-w{background-color: var(--color-white) !important;}
+
+.u-color-grey-dark-1{color: var(--color-grey-dark-1) !important;}
+
+
+
+
+
+
+
+
+
+// flex utilities
+
+.u-flex-end{justify-content: flex-end !important;}
+.u-flex-start{justify-content: flex-start !important;}
+
+.u-align-center{align-items: center !important;}
+
+
+
+
+// Miscellenous Utilities
+.u-w-100{width: 100% !important;} 
+.u-text-center{text-align: center !important;}
+.u-text-left{text-align: left !important;}
+.u-overflow-hidden{overflow: hidden !important;}
+.u-box-shadow{box-shadow: 0 0 1rem rgba(0,0,0,0),0 0 1rem rgba(0,0,0,.15) !important;}
+.u-border-photos{
+    border-top-left-radius: 7rem !important;
+    border-bottom-right-radius: 7rem !important;
+}
+.u-position-r{  position: relative !important;}
+.u-bg-grey{background-color: var(--color-grey-light-2) !important}
+.u-padding-none{padding: 0 !important;}
+.u-pl-none{padding-left: 0 !important;}
+.u-pr-none{padding-right: 0 !important;}
+.u-text-cap{text-transform: capitalize !important}
+.u-fw-l{font-weight: 300 !important;}
+.u-text-upper{text-transform: uppercase !important;}
+
+.u-br-s{
+    border-right: 2px solid var(--color-secondary);
+
+}
+
+.u-fs-d{font-size: 1.5rem !important;}
+
+.u-margin-none{margin: 0 !important;}
+.u-display-b{display: block !important;}
+
+.u-inline-block{display: inline-block !important}
+

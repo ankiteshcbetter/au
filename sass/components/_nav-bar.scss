@@ -1,0 +1,154 @@
+.nav{
+
+
+  &__container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: auto;
+  min-height: 100vh;
+  width: 40rem;
+  background-color: var(--color-primary-dark);
+  padding: 8rem 0 0 6rem;
+  z-index: 99;
+
+
+  @include response(big-desktop){
+    padding: 14rem 0 0 6rem;
+  }
+
+  @include response(tab-land){
+    padding: 14rem 0 0 6rem;
+  }
+  
+  transition: all .4s ease-in-out;
+}
+
+
+&__item{
+ transition: color .4s ease-in-out;
+ font-size: 1.7rem;
+ 
+  &:hover,
+  &:link,
+  &:active,
+  &:visited{
+    color: var(--color-secondary);
+  }
+}
+
+
+&__link{
+  text-decoration: none;
+  transition: color .4s ease-in-out;
+
+  &:hover{
+    color: var(--color-secondary);
+  }
+}
+
+&__item,
+&__link{
+  text-transform: uppercase;
+  list-style: none;
+  color: var(--color-grey-light-5);
+  margin-bottom: 1.2rem;  
+}
+
+
+
+&__item--sub{
+  text-transform: none;
+  color: var(--color-grey-dark-3);
+  margin-bottom: 0;
+  margin-top: 1rem;
+
+  @include response(desktop){
+    margin-top: 0;
+  }
+
+  &:hover,
+  &:link,
+  &:active,
+  &:visited{
+    color: var(--color-secondary);
+  }
+
+}
+
+}
+.nav__container.collapse{
+  right: -40rem;
+  transition: all .4s ease-in-out;
+
+}
+
+
+
+
+
+.burger-btn{
+
+  background: transparent;
+  border: none;
+  z-index: 99;
+  cursor: pointer;
+
+
+  &:focus{
+    outline: none;
+  }
+
+  &__line{
+    background-color: var(--color-white);
+    height: 2px;
+    width: 3rem;
+    display: block;
+
+  transition: transform .5s ease-in-out;
+
+
+    &:nth-child(1){
+      transform: translate3d(1rem,1rem,1rem) rotate(-45deg);
+    }
+
+    &:nth-child(2){
+      opacity: 0;    
+    }
+
+    &:nth-child(3){
+      transform: translate3d(1rem,-.8rem,1rem) rotate(45deg);
+    }
+    
+
+    &:not(:last-child){
+      margin-bottom: .7rem
+    }
+  }
+
+
+ 
+  
+
+}
+
+.burger-btn.collapse{
+  
+
+  .burger-btn__line:nth-child(1){
+    transform: translate3d(0,0,0) rotate(0);
+  }
+
+  .burger-btn__line:nth-child(2){
+    opacity: 1;
+  }
+
+  .burger-btn__line:nth-child(3){
+    transform: translate3d(0,0,0) rotate(0);
+    
+  }
+}
+
+
+
+

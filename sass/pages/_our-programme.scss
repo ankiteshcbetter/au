@@ -1,0 +1,36 @@
+.section-ww{
+    padding-top: 20rem;
+
+    &__heading-container{
+        display: flex;
+        align-items: center;
+        margin-bottom: 5rem;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+    }
+
+    &__text{
+        @include response(tab-port){
+
+            
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__text-box{
+        
+        @include response(tab-port){
+            order: 0;        
+        }
+    }
+
+    &__img-box{
+
+        @include response(tab-port){
+            order: 1;
+
+        }
+    }
+}
+
+

@@ -9,6 +9,18 @@
 html{
 
     font-size: 62.5%;
+
+    @include response(tab-land){
+        font-size: 55%;
+    }
+
+    @include response(tab-port){
+        font-size: 50%;
+    }
+
+    @include response(phone){
+        font-size: 40%;
+    }
 }
 
 
@@ -20,5 +32,4 @@ body{
 
 section{
     padding: 9rem 0;
-
 }

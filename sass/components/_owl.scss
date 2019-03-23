@@ -1,0 +1,84 @@
+
+// Owl Livelihood
+
+.owl-success .owl-nav button.owl-prev{
+    display: none;
+}
+
+.owl-success .owl-nav button.owl-next{
+    position: absolute;
+    bottom: 29%;
+    left: 33.5%;
+    color: var(--color-secondary);
+
+    &:hover{
+        outline: none;
+        background-color: transparent;
+        color: var(--color-secondary);
+
+    }
+}
+
+.owl-success.owl-theme .owl-dots{
+    position: absolute;
+    bottom: 29%;
+    right: 10%;
+
+    @include response(tab-port){
+        bottom: 10%;
+    }
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-gallery.owl-theme .owl-dots .owl-dot:hover span{
+background: var(--color-secondary);
+}
+
+.owl-theme .owl-dots .owl-dot span,.owl-theme .owl-dots .owl-dot {
+    border-radius: 0px;
+
+
+    &:focus{
+        outline: none;
+    }
+}
+
+.owl-partner.owl-theme .owl-dots,.owl-homeGallery.owl-theme .owl-dots, .owl-knowledge.owl-theme .owl-dots{
+    text-align: left;
+}
+
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 5rem;
+}
+
+
+.owl-gallery{
+    padding-top: 5rem;
+}
+
+.owl-gallery.owl-theme .owl-nav.disabled.owl-dots{
+    margin-top: 5rem;
+}
+
+.owl-partnerHome{
+    padding: 8rem 6rem;
+    background-color: var(--color-white);
+    height: 100%;
+}
+
+
+.owl-knowledge{
+
+    .owl-stage{
+        padding-left: 0 !important;
+    }
+
+    .owl-item{
+        opacity: .5;
+    }
+
+    .owl-item.active{
+        opacity: 1;
+    }
+
+}

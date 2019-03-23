@@ -1,0 +1,114 @@
+.testimonial-feature{
+
+
+
+    .col-12{
+        margin-bottom: 5rem;
+    }
+
+
+    background-color: var(--color-grey-light-2);
+
+    &__container{
+        position: relative;
+
+        display: flex;
+        align-items: center;
+
+        @include response(tab-port){
+            flex-direction: column;
+        }
+
+    }
+
+    &__img-box{
+        flex: 0 0 24%;
+        position: relative;
+        z-index: 8;
+
+        @include response(tab-port){
+            padding-top: 5rem;
+            text-align: center;
+            width: 100%;
+            background-color: var(--color-white);
+        }
+    }
+
+    &__img{
+        width: 100%;
+        display: block;
+
+        @include response(tab-port){
+            width: 30rem;
+            display: inline;
+        }
+    }
+
+    &__content{
+        flex: 1;
+        position: relative;
+        padding: 4rem;
+        z-index: 9;
+        background-color: var(--color-white);
+        margin-left: -5rem;
+
+
+        &--right,
+        &--left{
+            border: 2px solid var(--color-grey-light-3);
+            transition: all .4s ease-in-out;
+
+            &:hover{
+                box-shadow: var(--shadow-2);
+                border: 2px solid transparent;
+            }
+        }
+
+        &--right{
+            margin-left: 0rem;
+            margin-right: -5rem;
+
+            @include response(tab-port){
+                margin-right: 0;
+            }
+
+        }
+
+        @include response(tab-port){
+            margin-left: 0;
+        }
+        
+    }
+
+    &__name{
+        text-transform: uppercase;
+        color: var(--color-secondary);
+        font-weight: 500;
+        font-size: 2.2rem;
+        letter-spacing: 2px;
+        margin-top: 2rem;
+        line-height: 1.1;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    &__designation{
+        text-transform: uppercase;
+    }
+
+
+    &__lquote{
+        position: absolute;
+        left: -3rem;
+        top: 5rem;
+        z-index: 9;
+    }
+
+    &__rquote{
+        position: absolute;
+        right: -3rem;
+        top: 5rem;
+        z-index: 9;
+    }
+}
+

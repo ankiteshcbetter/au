@@ -1,0 +1,49 @@
+
+.footer{
+    background-color: var(--color-primary);
+    padding: 5rem 0;
+
+    &__container{
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: space-between;
+
+        @include response(tab-port){
+            flex-direction: column;
+        }
+    }
+    
+
+    &__img{
+
+        @include response(tab-port){
+            margin-bottom: 3rem;
+        }
+    }
+
+
+    &__social{
+        a{
+        text-decoration: none;
+
+        }
+        @include response(tab-port){
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__copy{
+        margin: 0;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    &__icon{
+        height: 1.75rem;
+        width: 1.75rem;
+        fill: var(--color-secondary);
+        margin-right: 2rem;
+        
+    }
+}

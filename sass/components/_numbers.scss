@@ -1,0 +1,90 @@
+.numbers{
+    padding: 0;
+    background-color: var(--color-grey-light-2);
+
+
+    .col-md-6{
+        margin-bottom: 2rem;
+    }
+
+   
+    
+
+
+    &__box{
+        background-color: var(--color-white);
+        padding: 6rem 2rem;
+        transform: translateY(50%);
+        transition: all .3s ease-in-out;
+        height: 100%;
+
+        @include response(tab-port){
+            margin-bottom: 2rem;
+        }
+
+        @include response(phone){
+            padding: 6rem 4rem;
+        }
+
+        &:hover{
+            box-shadow: var(--shadow-2);
+        }
+    }
+
+    &--about{
+
+        padding: 12rem;
+
+        background-image: url(../images/image-parallax.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+        &__box{
+        transform: translateY(0);
+        padding: 4.5rem 2rem;
+
+        @include response(phone){
+            padding: 4.5rem 4rem;
+        }
+
+        }
+    }
+
+    &__number{
+        font-size: 4rem;
+        color: var(--color-grey-dark-1);
+        font-weight: 500;
+        line-height: 1;
+        margin: 0;
+    }
+
+    &__text{
+        font-size: 2.2rem;
+        color: var(--color-dark-grey-2);
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    &__social{
+        margin-right: 2rem;
+    }
+
+    
+
+    &__text-contact{
+        font-size: 1.5rem;
+        color: var(--color-dark-grey-2);
+        font-weight: 300;
+        letter-spacing: 2px;
+        line-height: 1.2;
+    }
+
+    &__icon{
+        height: 6.5rem;
+        width: 6.5rem;
+        margin-bottom: 4rem;
+    }
+
+}

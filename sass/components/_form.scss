@@ -1,0 +1,99 @@
+.form{
+
+    &__item{
+        width: 100%;
+        border: 2px solid var(--color-grey-light-3);
+        padding: 2rem 3rem;
+        color: var(--color-form);
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        font-weight: 400;
+
+
+
+       
+        @include response(tab-land){
+            margin-bottom: 4rem;
+            font-size: 1.4rem;
+        }
+       
+       
+        @include response(tab-port){
+            margin-bottom: 4rem;
+            font-size: 1.5rem;
+        }
+
+       
+
+        @include response(phone){
+            margin-bottom: 4rem;
+            font-size: 1.7rem;
+        }
+
+
+        &--file{
+            padding-left: 7rem;
+        }
+    }
+
+    &__file{
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        
+    }
+
+    &__text-area{
+        height: 20rem;
+    }
+
+    &__img{
+        position: absolute;
+        left: 3rem;
+        top: 2rem;
+    }
+
+    
+    &__container{
+        display: flex;
+        align-items: center;
+    }
+
+
+    &__label{
+        text-transform: uppercase;
+        color: var(--color-text-dark);
+        margin-right: 1rem;
+    }
+
+    
+
+    .row:not(:last-child){
+        margin-bottom: 4.5rem;
+
+        @include response(tab-port){
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+.form1{
+
+    margin-top: 1rem;
+
+    @include response(phone){
+        margin-top: 4rem;
+    }
+
+    &__item{
+        width: 24rem;
+        margin-bottom: 0;
+
+        @include response(phone){
+            margin-right: 2rem;
+        }
+    }
+}

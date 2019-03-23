@@ -1,0 +1,70 @@
+.header{
+    position: relative;
+
+    &__img{
+        width: 100vw;
+
+        // custom
+        img{
+            width: 100%;
+            display: block;
+        }
+    }
+
+    &__logo img{
+
+        @include response(phone){
+            width: 22rem;
+        }
+    }
+
+    &__text{
+        position: absolute;
+        top: 54%;
+        color: var(--color-primary);
+        text-transform: uppercase;
+        font-weight: 300;
+
+        &--home{
+            transform: translateY(-50%);
+
+            @include response(big-desktop){
+                transform: translateY(-77%);
+            }
+
+            @include response(phone){
+                transform: translateY(-40%);            
+            }
+        }
+    }
+
+    &__navigation{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 3.5rem 0;
+        border-bottom: 2px solid var(--color-tertiary);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        @include response(phone){
+            padding: 3rem;
+        }
+
+    }
+
+    &__play{
+        width: 25.4rem;
+        height: auto;
+
+    }
+
+    &__play-container{
+        text-align: center;
+        margin-top: 3rem;
+    }
+}
+

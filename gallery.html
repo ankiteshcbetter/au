@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+      rel="stylesheet"
+    />
+
+    <!-- StyleSheet -->
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="node_modules/jquery/dist/jquery.min.js" defer></script>
+    <script src="js/owl.carousel.min.js" defer></script>
+    <script
+      src="https://isotope.metafizzy.co/v1/jquery.isotope.min.js"
+      defer
+    ></script>
+    <script src="js/script.js" defer></script>
+
+    <title>Gallery</title>
+  </head>
+  <body>
+    <!-- Header -->
+
+   <header class="header">
+
+      <nav class="nav__container collapse">
+        <div class="nav">
+          <ul class="nav__list">
+            <a class="nav__link" href="#"><li class="nav__item">Home</li></a> 
+            <a class="nav__link" href="#"><li class="nav__item">About</li></a> 
+            <li class="nav__item"><a class="nav__link" href="#">Programmes</a>
+                <ul class="nav__sub">
+                  <a class="nav__link" href="livelihood.html"><li class="nav__item nav__item--sub">Livelihood Enhancement</li></a> 
+                  <a class="nav__link" href="Sports.html"><li class="nav__item nav__item--sub">Sports for Development</li></a> 
+                  <a class="nav__link" href="Financial.html"><li class="nav__item nav__item--sub">Financial & Digital Literacy</li></a> 
+                  <a class="nav__link" href="other.html"><li class="nav__item nav__item--sub">Other Programme</li></a> 
+                </ul>
+              </li> 
+            <a class="nav__link" href="partner.html"><li class="nav__item">Partners</li></a> 
+            <a class="nav__link" href="career.html"><li class="nav__item">career</li></a> 
+            <li class="nav__item">
+                <a class="nav__link" href="knowledge-bank.html"> Knowledge Bank</a>
+                <ul class="nav__sub">
+                    <a class="nav__link" href="media.html"><li class="nav__item nav__item--sub">Media</li></a> 
+                    <a class="nav__link" href="success-stories.html"><li class="nav__item nav__item--sub">Success Stories</li></a> 
+                    <a class="nav__link" href="testimonial.html"><li class="nav__item nav__item--sub">Testimonial</li></a> 
+                    <a class="nav__link" href="blog.html"><li class="nav__item nav__item--sub">Blog</li></a> 
+                  </ul>
+              </li> 
+            <a class="nav__link" href="gallery.html"><li class="nav__item">Gallery</li></a> 
+            <a class="nav__link" href="contact.html"><li class="nav__item">Contact</li></a> 
+
+
+          </ul>
+        </div>
+        <button class="burger-btn btn-nav collapse">
+            <span class="burger-btn__line"></span>
+            <span class="burger-btn__line"></span>
+            <span class="burger-btn__line"></span>
+
+          </button>
+      </nav>
+
+
+
+
+      <picture class="header__img">
+        <!-- Banner Image -->
+        <source
+          srcset="images/banner-our-programme.jpg"
+          alt="small header image"
+          media="(max-width:37.5em)"
+        />
+        <img src="images/banner-our-programme.jpg" alt="Our Programme Banner" />
+      </picture>
+
+      <!-- Navigation -->
+      <div class="container">
+        <div class="header__navigation container">
+          <figure class="header__logo">
+            <img src="images/AU-MENU LOGO.png" alt="logo" srcset="" />
+          </figure>
+          <button class="burger-btn collapse btn-main">
+            <span class="burger-btn__line"></span>
+            <span class="burger-btn__line"></span>
+            <span class="burger-btn__line"></span>
+
+          </button>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="header__text">
+          <h1 class="heading-primary u-mb-xs">A Journey of Humanity</h1>
+          <div class="breadcrumb">
+            <a href="#" class="breadcrumb__item">Home</a>
+            <span class="breadcrumb__divider">/</span>
+            <a href="#" class="breadcrumb__item">Gallery</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+
+    <main>
+      <section class="section-filter"></section>
+      <div class="container section-filter__outer-container">
+        <div class="row">
+          <div class="section-filter__container">
+            <button class="section-filter__button current" data-filter="*">
+              All
+            </button>
+            <button class="section-filter__button" data-filter=".livelihood">
+              livelihood<br />enhancement
+            </button>
+            <button class="section-filter__button" data-filter=".sports">
+              sports for<br />development
+            </button>
+            <button class="section-filter__button" data-filter=".financial">
+              financial &<br />digital literacy
+            </button>
+            <button class="section-filter__button" data-filter=".other">
+              other<br />initiATIVES
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="form form1">
+        <div class="container">
+          <div class="row justify-content-end">
+              <form class="form__container" action="" method="post">
+                <label class="form__label" form="label" for="year">Year</label>
+                  <select name="year" id="year" class="form__item form1__item" value="ALL">
+                      <option name="Jaipur" id="">ALL</option>
+                    </select>
+              </form>
+          </div>
+        </div>
+      </div>
+
+      <section class="gallery">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-4 col-md-6 livelihood">
+              <a href="" class="gallery__link">
+                <img
+                  src="images/programme-1.jpg"
+                  alt="Programme"
+                  class="gallery__img"
+                />
+                <div class="gallery__content">
+                  <p class="gallery__text">Event Heading 1</p>
+                  <p class="gallery__text">Lorem Ipsum Dlor Sit</p>
+                  <svg class="gallery__icon">
+                    <use xlink:href="images/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 sports">
+              <a href="" class="gallery__link">
+                <img
+                  src="images/programme-3.jpg"
+                  alt="Programme"
+                  class="gallery__img"
+                />
+                <div class="gallery__content">
+                  <p class="gallery__text">Event Heading 1</p>
+                  <p class="gallery__text">Lorem Ipsum Dlor Sit</p>
+                  <svg class="gallery__icon">
+                    <use xlink:href="images/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 financial">
+              <a href="" class="gallery__link">
+                <img
+                  src="images/programme-1.jpg"
+                  alt="Programme"
+                  class="gallery__img"
+                />
+                <div class="gallery__content">
+                  <p class="gallery__text">Event Heading 1</p>
+                  <p class="gallery__text">Lorem Ipsum Dlor Sit</p>
+                  <svg class="gallery__icon">
+                    <use xlink:href="images/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 other">
+              <a href="" class="gallery__link">
+                <img
+                  src="images/programme-3.jpg"
+                  alt="Programme"
+                  class="gallery__img"
+                />
+                <div class="gallery__content">
+                  <p class="gallery__text">Event Heading 1</p>
+                  <p class="gallery__text">Lorem Ipsum Dlor Sit</p>
+                  <svg class="gallery__icon">
+                    <use xlink:href="images/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 livelihood">
+              <a href="" class="gallery__link">
+                <img
+                  src="images/programme-1.jpg"
+                  alt="Programme"
+                  class="gallery__img"
+                />
+                <div class="gallery__content">
+                  <p class="gallery__text">Event Heading 1</p>
+                  <p class="gallery__text">Lorem Ipsum Dlor Sit</p>
+                  <svg class="gallery__icon">
+                    <use xlink:href="images/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 other">
+              <a href="" class="gallery__link">
+                <img
+                  src="images/programme-1.jpg"
+                  alt="Programme"
+                  class="gallery__img"
+                />
+                <div class="gallery__content">
+                  <p class="gallery__text">Event Heading 1</p>
+                  <p class="gallery__text">Lorem Ipsum Dlor Sit</p>
+                  <svg class="gallery__icon">
+                    <use xlink:href="images/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer__container">
+            <img src="images/AU-MENU LOGO.png" alt="logo" class="footer__img" />
+            <div class="footer__social">
+              <a href="#">
+                <svg class="footer__icon">
+                  <use xlink:href="images/svg/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="footer__icon">
+                  <use xlink:href="images/svg/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="footer__icon">
+                  <use xlink:href="images/svg/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="footer__icon">
+                  <use xlink:href="images/svg/sprite.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </div>
+            <p class="footer__copy">
+              COPYRIGHT @ 2017 - AU BANK . All Rights Reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

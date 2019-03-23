@@ -1,0 +1,27 @@
+.section-logo{
+    background-color: var(--color-grey-light-2);
+    
+    @include response(tab-port){
+        padding-bottom: 5rem;
+
+    }
+
+    &__img{
+        width: 100%;
+        display: block;
+        
+        @include response(tab-port){
+            margin-bottom: 4rem;
+        }
+    }
+
+    .row:not(:last-child){
+        margin-bottom: 4rem;
+
+        @include response(tab-port){
+            margin-bottom: 0;
+        }
+    }
+}
+
+

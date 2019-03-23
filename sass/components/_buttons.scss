@@ -1,0 +1,275 @@
+.cta{
+    color: var(--color-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    text-decoration: none;
+
+    &--text{
+        margin-right: 1rem;
+        transition: all .2s ease-in-out;
+    }
+
+    &--arrow{
+        font-size: 3rem;
+        padding-bottom: 0.6rem;
+    }
+
+    &:hover{
+        text-decoration: none;
+        color: var(--color-secondary);
+    }
+
+    &:hover  &--text{
+        margin-right: 3rem;
+    }
+
+
+}
+
+.cta-home{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-decoration: none;
+    color: var(--color-secondary);
+    letter-spacing: 2px;
+}
+
+.cta-programme{
+    text-transform: uppercase;
+    color: var(--color-white);
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.cta-secondary{
+    text-decoration: none;
+    color: var(--color-white);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+   
+
+    &__text{
+        margin-right: 5px;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+        transition-delay: 0s;
+
+        @include response(tab-port){
+          opacity: 1;
+        }
+
+
+        &:hover{
+            text-decoration: none;
+        }
+    }
+
+    &__icon{
+        color: var(--color-secondary);
+        font-size: 3rem;
+        margin-left: -11rem;
+        transition: all .6s ease-in-out;
+        line-height: 0;
+        padding-bottom: .5rem;
+
+        @include response(tab-port){
+            margin-left: 0;
+            padding-bottom: .4rem;
+
+        }
+        
+    }
+
+    &:hover{
+        text-decoration: none;
+        color: var(--color-white);
+    }
+
+    &:hover &__text{
+        opacity: 1;
+        transition-delay: .4s;
+
+    }
+
+    &:hover &__icon{
+        margin-left: 1rem;
+
+    }
+}
+
+.button-project{
+    width: 100%;
+    background-color: var(--color-secondary);
+    text-transform: uppercase;
+    color: var(--color-white);
+    letter-spacing: 2px;
+    padding: 1.5rem 0;
+    border: none;
+    cursor: pointer;
+    margin-top: 5rem;
+}
+
+
+.btn-form{
+    background-color: var(--color-primary);
+    width: 100%;
+    border: none;
+    padding: 2rem 0;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: var(--color-white);
+    letter-spacing: 1px;
+
+
+    &__icon{
+        font-size: 2rem;
+        margin-left: 2rem;
+    }
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.btn-nav{
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+  
+    @include response(big-desktop){
+      top: 7rem;
+    }
+
+    @include response(tab-land){
+        top: 7rem;
+      }
+  
+  }
+
+  .burger-btn.btn-main{
+    display: none;
+   }
+   
+   .burger-btn.collapse.btn-main{
+     display: block;
+   }
+   
+
+   .cta-white{
+       color: var(--color-white);
+
+       &__icon{
+           color: var(--color-white);
+       }
+   }
+
+
+   .cta-grey{
+    color: var(--color-grey-dark-3);
+
+    &:hover{
+        color: var(--color-grey-dark-3);
+    }
+
+    &__icon{
+        color: var(--color-grey-dark-3);
+        
+    }
+}
+
+.button-down{
+    height: 2px;
+    width: .9rem;
+    background-color: var(--color-secondary);
+    transition: transform .2s ease-in-out;
+    display: inline-block;
+
+    &--left{
+    margin-left: 1rem;
+        transform: translateX(2px) rotate(45deg);
+    }
+
+    &--right{
+        transform: translateX(-2px) rotate(-45deg);
+    }
+}
+
+.cta-collapse--disable, .button-map--close{
+
+    .button-down{
+    
+        &--left{
+            transform: translateX(2px) rotate(-45deg);
+        }
+    
+        &--right{
+            transform: translateX(-2px) rotate(45deg);
+        }
+    }
+}
+
+
+
+.cta-collapse--disable{
+
+    .cta--open{
+        display: none;
+    }
+
+    .cta--close{
+        display: inline;
+    }
+}
+
+.cta-collapse--active{
+
+    .cta--open{
+        display: inline;
+    }
+
+    .cta--close{
+        display: none;
+    }
+}
+
+.cta-knowledge{
+    text-decoration: none;
+    color: var(--color-secondary);
+    font-size: 3rem;
+
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.button-map{
+    width: 100%;
+    border: none;
+    border-top: 1px solid var(--color-grey-light-3);
+    border-bottom: 1px solid var(--color-grey-light-3);
+    padding: 5rem 0;
+    background-color: var(--color-white);
+    font-size: 2.2rem;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    &:focus{
+        outline: none;
+    }
+}

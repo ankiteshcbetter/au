@@ -1,0 +1,107 @@
+.quote {
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-primary),
+    var(--color-primary-dark)
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 20rem;
+
+
+
+
+  &__img-box{
+    margin-top: -9rem;
+    transform: translateY(-50%);
+  }
+
+  &__img{
+    width: 100%;
+    display: block;
+  }
+
+
+  &__text{
+      text-align: center;
+      line-height: 1.5;
+      color: var(--color-white);
+      text-align: center;
+      position: relative;
+
+      &::after{
+          content: url("../images/quote-right.png");
+          display: block;
+          position: absolute;
+          bottom: -3.5rem;
+          right: -8rem;
+
+          @include response(tab-port){
+            display: none;
+          }
+      }
+
+      &::before{
+        content: url("../images/quote-left.png");
+        display: block;
+        position: absolute;
+        top: -3.5rem;
+        left: -8rem;
+
+        @include response(tab-port){
+          display: none;
+        }
+    }
+  }
+
+
+}
+
+
+.quote2{
+  padding-bottom: 11rem;
+
+
+  &__img-container{
+    width: 100%;
+    margin-top: -32rem;
+  }
+
+  &__img{
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+
+    &--1{
+      width: 36.5%;
+      z-index: 9;
+
+      @include response(tab-port){
+        width: 35.5%;
+      }
+    }
+
+    &--2{
+      width: 46%;
+      margin-left: -10%;
+      z-index: 10;
+      border-top-left-radius: 6rem;
+      border-bottom-right-radius: 6rem;
+
+      @include response(phone){
+        width: 45%;
+      }
+
+    }
+
+    &--3{
+      width: 36.5%;
+      margin-left: -10%;
+      z-index: 9;
+
+    }
+  }
+
+}
+
+

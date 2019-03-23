@@ -1,0 +1,47 @@
+.section-feather {
+  padding-bottom: 25rem;
+
+  @include response(tab-port) {
+    padding-bottom: 11rem;
+  }
+
+  &__img-box {
+    margin-bottom: 4rem;
+
+    @include response(tab-port) {
+      order: 0;
+    }
+  }
+
+  &__content-box {
+    @include response(tab-port) {
+      order: 1;
+    }
+  }
+}
+
+.section-aboutPro {
+  padding-top: 0;
+  padding-bottom: 11rem;
+
+  background-color: var(--color-grey-light-2);
+
+  &__orange-box {
+    padding: 6rem 8rem;
+    background-color: var(--color-secondary);
+    transform: translateY(-50%);
+
+    @include response(tab-port) {
+      transform: translateY(0);
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__text {
+    font-size: 2rem;
+    color: var(--color-primary);
+    text-align: center;
+    line-height: 1.4;
+    font-weight: 500;
+  }
+}
